@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-image: linear-gradient(120deg, #fcd979 0%, #e69696 100%); 
+        }
+        .menu{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+        .menu a::after{
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 0%;
+            border-bottom: 2px solid rgba(19, 78, 241, 0.67);
+            transition: all .1s;
+            
+        }
+        /* .menu a::after{
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 0%;
+            border-right: 2px solid rgba(19, 78, 241, 0.67);
+            transition: all .4s;
+            
+        } */
+        .menu a::before{
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 0%;
+            border-bottom: 2px solid rgba(19, 60, 241, 0.67);
+            transition: all .4s;
+            
+        }
+        .menu > a:hover::after{
+            width: 100%;
+        }
+        .menu > a:hover::before{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Gellary</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(97, 133, 121); */
+}
+
+header nav{
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(76, 76, 180); */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid rgb(19, 19, 19);
+}
+header nav .logo{
+    margin-left: 100px;
+    line-height: 50px;
+}
+
+header nav .nav-bar{
+    
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 50px; */
+    margin-right: 150px;
+    
+}
+header nav .nav-bar a{
+    text-decoration: none;
+    color: black;
+    transform: all .2s;
+    
+}
+/* header nav .nav-bar a.activ{
+position: relative;
+width: 50px;
+height: 23px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+header nav .nav-bar a:hover{
+position: relative;
+width: auto;
+height: 23px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+} */
+
+.nav-bar  a::after{
+    content: "";
+    
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid coral;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+
+.heading-item0{
+    width: 100%;
+    height: 90%;
+    /* background-color: crimson; */
+    display: flex;
+}
+
+.heading-item1{
+    /* background-color: burlywood; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.heading-item2{
+    /* background-color: cadetblue; */
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.heading-item-h{
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    /* background-color: blueviolet; */
+    line-height: 30px;
+    
+}
+
+.heading-item-h h1{
+    font-size: 40px;
+    padding: 8px 0;
+}
+
+.heading-item-h h1 span{
+    color:  coral;
+}
+
+.icon{
+    /* position: relative; */
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    padding: 20px 0;
+    float: left;
+    /* background-color: blanchedalmond; */
+}
+.icon i{
+    font-size: 30px;
+    transition: transform .2s;
+}
+.icon i:hover{
+ color:  coral;
+ transform: scale(1.2);
+}
+
+.heading-item2 img{
+    margin-top: 80px;
+    mix-blend-mode:darken;
+}
